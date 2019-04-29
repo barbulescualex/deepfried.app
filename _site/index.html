@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base target="_blank">
 
-	<title></title>
+	<title>Deep Fried</title>
 	<meta name="description" content="The most popular meme deep fryer on the appstore!">
 
 	<link rel="shortcut icon" href="">
@@ -71,17 +71,11 @@
     
 
     
-
-    
-
-    
-
-    
         <script>
             $(function() {
                 $(".iphoneScreen").attr('src', '/assets/screenshot/yourscreenshot.png');
                 $(".iphoneScreen").removeClass("hidden");
-                console.log("/assets/screenshot/yourscreenshot.png");
+               // console.log("/assets/screenshot/yourscreenshot.png");
             });
         </script>
     
@@ -95,7 +89,7 @@
             <script>
                 $(function() {
                     $(".iphoneScreen").addClass("hidden");
-                    console.log("remove screenshot");
+                   // console.log("remove screenshot");
                 });
             </script>
         
@@ -104,7 +98,7 @@
                 $(function() {
                     $(".videoContainer").removeClass("hidden");
                     $(".screenvideo").append('<source src="/assets/videos/promo.mp4" type="video/mp4">');
-                    console.log("/assets/videos/promo.mp4");
+                   // console.log("/assets/videos/promo.mp4");
                 });
             </script>
         
@@ -115,7 +109,7 @@
             <script>
                 $(function() {
                     $(".iphoneScreen").addClass("hidden");
-                    console.log("remove screenshot");
+                   // console.log("remove screenshot");
                 });
             </script>
         
@@ -124,12 +118,10 @@
             $(function() {
                 $(".videoContainer").removeClass("hidden");
                 $(".screenvideo").append('<source src="/assets/videos/promo.webm" type="video/webm">');
-                console.log("/assets/videos/promo.webm");
+                //console.log("/assets/videos/promo.webm");
             });
         </script>
         
-    
-
     
 
     
@@ -174,7 +166,7 @@
         <div>
             <span class="fa-stack fa-1x">
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-play-circle fa-stack-1x"></i>
+                <i class="iconTop fas fa-sliders-h fa-stack-1x"></i>
             </span>
         </div>
         <div class="featureText">
@@ -195,7 +187,7 @@
         <div>
             <span class="fa-stack fa-1x">
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-magic fa-stack-1x"></i>
+                <i class="iconTop fas fa-camera fa-stack-1x"></i>
             </span>
         </div>
         <div class="featureText">
@@ -216,7 +208,7 @@
         <div>
             <span class="fa-stack fa-1x">
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-play-circle fa-stack-1x"></i>
+                <i class="iconTop fas fa-fingerprint fa-stack-1x"></i>
             </span>
         </div>
         <div class="featureText">
@@ -237,7 +229,7 @@
         <div>
             <span class="fa-stack fa-1x">
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-sync fa-stack-1x"></i>
+                <i class="iconTop fas fa-heading fa-stack-1x"></i>
             </span>
         </div>
         <div class="featureText">
@@ -245,7 +237,7 @@
                 Text
             </h3>
             <p>
-                With the Edit controller you can add text customizing the size (with just a pinch or zoom), changing the font and color!
+                With the Edit controller you can add text customizing the size (with just a pinch or zoom), change the font and color!
             </p>
         </div>
     </div>
@@ -258,7 +250,7 @@
         <div>
             <span class="fa-stack fa-1x">
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-adjust fa-stack-1x"></i>
+                <i class="iconTop fas fa-image fa-stack-1x"></i>
             </span>
         </div>
         <div class="featureText">
@@ -279,7 +271,7 @@
         <div>
             <span class="fa-stack fa-1x">
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-mobile fa-stack-1x"></i>
+                <i class="iconTop fas fa-folder fa-stack-1x"></i>
             </span>
         </div>
         <div class="featureText">
@@ -300,7 +292,7 @@
         <div>
             <span class="fa-stack fa-1x">
                 <i class="iconBack fas fa-circle fa-stack-2x"></i>
-                <i class="iconTop fas fa-star fa-stack-1x"></i>
+                <i class="iconTop fas fa-mobile fa-stack-1x"></i>
             </span>
         </div>
         <div class="featureText">
@@ -319,7 +311,7 @@
 </div>
                     <footer>
 	<p class="footerTextTop">Made by Alex Barbulescu</p>
-	<p class="footerTextBottom">Professional iOS Developer. Computer Engineering student at the University of Waterloo</p>
+	<p class="footerTextBottom">Professional m̶e̶m̶e̶r̶ iOS Developer. Computer Engineering student at the University of Waterloo.</p>
 	<div class="footerIcons">
 
 		
@@ -357,10 +349,10 @@ $(function() {
     var apiURL = "https://itunes.apple.com/lookup?id=1436647902&callback=?";
 
     $.getJSON(apiURL, function(json) {
-
+        console.log("Don't creep, checkout the source code on my github: https://github.com/barbulescualex/deepfried.app")
         if (json.results && json.results.length) {
 
-            console.info("Image strings loaded from Apple API.");
+            //console.info("Apple API came in clutch");
             var appInfo = json.results[0];
 
             // Set favicon
@@ -398,7 +390,7 @@ $(function() {
                 $($appStoreLink).attr("href", appInfo.trackViewUrl);
             }
 
-            console.info(appInfo);
+            //console.info(appInfo);
 
         }
     });  
