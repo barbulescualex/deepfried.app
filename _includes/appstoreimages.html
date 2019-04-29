@@ -9,7 +9,7 @@ $(function() {
     var apiURL = "https://itunes.apple.com/lookup?id={{ site.ios_app_id }}&callback=?";
 
     $.getJSON(apiURL, function(json) {
-        console.log("Don't creep, checkout the source code on my github: https://github.com/barbulescualex/deepfried.app")
+        console.log("Don't creep, check out the source code on my github: https://github.com/barbulescualex/deepfried.app")
         if (json.results && json.results.length) {
 
             //console.info("Apple API came in clutch");
