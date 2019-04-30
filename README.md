@@ -1,4 +1,5 @@
-# deepfried.app
+![Image](GitHubPreviews/safaripreview.png)
+
 Landing page for my iOS app, Deep Fried
 
 Built with Jekyll!
